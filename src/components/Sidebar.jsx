@@ -4,7 +4,7 @@ const Sidebar = () => {
       <div className="justify-center w-full flex">
         <a>Logo</a>
       </div>
-      <div className="bg-gray-500 justify-between items-center h-[400px] w-full py-6 px-2">
+      <div className="bg-gray-500 justify-between items-center h-[576px] w-full py-6 px-2">
         <li>
           <a className="flex just">
             <ion-icon size="large" name="grid-outline"></ion-icon>
