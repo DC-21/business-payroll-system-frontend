@@ -1,11 +1,13 @@
+import logo from '../images/logo.png'
+
 const Sidebar = () => {
   return (
-    <div className="h-screen w-[170px] bg-white items-center flex justify-between flex-col">
-      <div className="justify-center w-full flex">
-        <a>Logo</a>
+    <div className="h-screen w-[170px] bg-white items-center flex px-2 py-2 justify-between flex-col">
+      <div className="justify-center rounded bg-blue-950 w-full flex">
+        <img className='h-[95px] w-[100px]' src={logo} alt="logo"/>
       </div>
-      <div className="justify-center items-center h-[576px] w-full py-6 px-2">
-        <div className="justify-between rounded bg-blue-950 py-4 px-2 flex flex-col w-full h-full items-center">
+      <div className="justify-center items-center h-[576px] w-full py-2">
+        <div className="justify-between rounded bg-blue-950 py-4 flex flex-col w-full h-full items-center">
           <li className="list-none flex flex-col gap-2">
             <a className="cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start">
               <ion-icon size="large" name="grid-outline"></ion-icon>
