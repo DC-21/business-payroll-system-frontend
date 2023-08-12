@@ -1,8 +1,8 @@
-import React from 'react'
+
 
 const Settings = () => {
   return (
-    <div className='bg-blue-200'>Settings</div>
+    <div className='bg-blue-200 h-screen'>Settings</div>
   )
 }
 

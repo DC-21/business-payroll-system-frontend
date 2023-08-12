@@ -2,7 +2,7 @@ import Departments from '../components/Departments'
 
 const Department = () => {
   return (
-    <div>
+    <div className='h-screen w-full flex'>
         <Departments/>
     </div>
   )
