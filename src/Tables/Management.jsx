@@ -15,19 +15,27 @@ const Management = () => {
     },[]);
 
   return (
-    <div>
+    <div className="flex w-full justify-center items-center">
       <table>
         <thead>
             <th className="border border-blue-900 bg-white px-4 py-2">Name</th>
-            <th className="border border-blue-900 bg-white px-4 py-2">H.o.D</th>
-            <th className="border border-blue-900 bg-white px-4 py-2">Number of Employees</th>
+            <th className="border border-blue-900 bg-white px-4 py-2">Position</th>
+            <th className="border border-blue-900 bg-white px-4 py-2">Email</th>
+            <th className="border border-blue-900 bg-white px-4 py-2">Phone</th>
+            <th className="border border-blue-900 bg-white px-4 py-2">NRC</th>
+            <th className="border border-blue-900 bg-white px-4 py-2">Phone</th>
+            <th className="border border-blue-900 bg-white px-4 py-2">Account Number</th>
         </thead>
         <tbody>
         {management.map((management) => (
             <tr key={management.id}>
-              <td className="border border-blue-900 bg-white px-4 py-2">{management.Name}</td>
-              <td className="border border-blue-900 bg-white px-4 py-2">{management.HoD}</td>
-              <td className="border border-blue-900 bg-white px-4 py-2">{management.Number_of_employees}</td>
+              <td className="border border-blue-900 bg-white px-4 py-2">{management.name}</td>
+              <td className="border border-blue-900 bg-white px-4 py-2">{management.position}</td>
+              <td className="border border-blue-900 bg-white px-4 py-2">{management.email}</td>
+              <td className="border border-blue-900 bg-white px-4 py-2">{management.phone}</td>
+              <td className="border border-blue-900 bg-white px-4 py-2">{management.nrc}</td>
+              <td className="border border-blue-900 bg-white px-4 py-2">{management.salary}</td>
+              <td className="border border-blue-900 bg-white px-4 py-2">{management.account_no}</td>
             </tr>
           ))}
         </tbody>
