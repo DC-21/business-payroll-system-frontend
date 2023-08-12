@@ -1,3 +1,5 @@
+import AllDepartments from "./AllDepartments";
+
 const Departments = () => {
   return (
     <div className="w-full flex flex-col bg-blue-200">
@@ -15,6 +17,7 @@ const Departments = () => {
         <li className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">Security Departments</li>
         <li className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">Cleaners Departments</li>
       </ul>
+      <AllDepartments/>
     </div>
   );
 };
