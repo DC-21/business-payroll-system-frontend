@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Department from "./pages/Department";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
         <div className="flex-1 flex flex-col">
           <Navbar />
           <Routes>
+            <Route path="/" element={<Home/>}/>
             <Route path="/departments" element={<Department />} />
           </Routes>
         </div>
