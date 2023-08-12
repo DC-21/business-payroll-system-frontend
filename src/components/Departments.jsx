@@ -1,4 +1,4 @@
-import AllDepartments from "./AllDepartments";
+import Management from "../Tables/Management";
 
 const Departments = () => {
   return (
@@ -18,7 +18,7 @@ const Departments = () => {
         <li className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">Cleaners Departments</li>
       </ul>
       <div className="mt-4">
-      <AllDepartments/>
+      <Management/>
       </div>
     </div>
   );
