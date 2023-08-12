@@ -13,6 +13,7 @@ const Security = () => {
             console.log(error);
           });
     },[]);
+    
   return (
     <div className="flex w-full justify-center items-center">
         <table>
