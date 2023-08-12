@@ -38,10 +38,10 @@ const Sidebar = () => {
               <ion-icon size="large" name="list-circle-outline"></ion-icon>
               <p>Departments</p>
             </Link>
-            <a className="cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start">
+            <Link to="/settings" className="cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start">
               <ion-icon size="large" name="settings-outline"></ion-icon>
               <p>Settings</p>
-            </a>
+            </Link>
           </li>
           <li className="list-none">
           <a className="cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start mr-9">
