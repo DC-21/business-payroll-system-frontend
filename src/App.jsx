@@ -12,9 +12,9 @@ import Calendar from "./components/Calendar";
 
 const App = () => {
   return (
-      <div className="flex h-screen">
+      <div className="w-full flex h-screen">
         <Sidebar />
-        <div className="flex-1 flex flex-col">
+        <div className="w-full flex-1 flex flex-col">
           <Navbar />
           <Routes>
             <Route path="/" element={<Home/>}/>
