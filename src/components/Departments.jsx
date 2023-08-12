@@ -7,13 +7,13 @@ const Departments = () => {
           View all Departments Records.
         </p>
       </div>
-      <ul className="w-full bg-red-200 flex gap-4 justify-center items-center list-none text-white">
-        <li className="py-3 px-2 rounded bg-blue-950">All Departments</li>
-        <li className="py-3 px-2 rounded bg-blue-950">Management</li>
-        <li className="py-3 px-2 rounded bg-blue-950">IT Departments</li>
-        <li className="py-3 px-2 rounded bg-blue-950">Finance Departments</li>
-        <li className="py-3 px-2 rounded bg-blue-950">Security Departments</li>
-        <li className="py-3 px-2 rounded bg-blue-950">Cleaners Departments</li>
+      <ul className="w-full flex gap-4 justify-center items-center list-none text-white">
+        <li className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">All Departments</li>
+        <li className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">Management</li>
+        <li className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">IT Departments</li>
+        <li className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">Finance Departments</li>
+        <li className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">Security Departments</li>
+        <li className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">Cleaners Departments</li>
       </ul>
     </div>
   );
