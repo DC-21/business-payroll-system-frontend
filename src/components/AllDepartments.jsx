@@ -21,14 +21,16 @@ const AllDepartments = () => {
     <div className="w-full flex justify-center items-center">
       <table>
         <thead>
-            <th className="border border-blue-900 px-4 py-2">Name</th>
-            <th className="border border-blue-900 px-4 py-2">Number of Employees</th>
+            <th className="border border-blue-900 bg-white px-4 py-2">Name</th>
+            <th className="border border-blue-900 bg-white px-4 py-2">H.o.D</th>
+            <th className="border border-blue-900 bg-white px-4 py-2">Number of Employees</th>
         </thead>
         <tbody>
         {departments.map((department) => (
             <tr key={department.id}>
-              <td className="border border-blue-900 px-4 py-2">{department.Name}</td>
-              <td className="border border-blue-900 px-4 py-2">{department.Number_of_employees}</td>
+              <td className="border border-blue-900 bg-white px-4 py-2">{department.Name}</td>
+              <td className="border border-blue-900 bg-white px-4 py-2">{department.HoD}</td>
+              <td className="border border-blue-900 bg-white px-4 py-2">{department.Number_of_employees}</td>
             </tr>
           ))}
         </tbody>
