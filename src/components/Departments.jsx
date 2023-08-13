@@ -1,8 +1,10 @@
 import { useState } from "react";
 import AllDepartments from "../Tables/AllDepartments";
-// import Security from "../Tables/Security";
-import { Link } from 'react-router-dom';
 import Management from '../Tables/Management';
+import IT from '../Tables/IT';
+import Finance from '../Tables/Finance';
+import Security from '../Tables/Security';
+import Cleaners from '../Tables/Cleaners';
 
 const Departments = () => {
   const[department,setDepartment]=useState('')
@@ -17,14 +19,18 @@ const Departments = () => {
       <ul className="w-full flex gap-4 justify-center items-center list-none text-white">
         <button onClick={()=>setDepartment("All")} className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">All Departments</button>
         <button onClick={()=>setDepartment("Management")} className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">Management</button>
-        <Link to="/it-department" className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">IT Departments</Link>
-        <Link to="/finance-department" className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">Finance Departments</Link>
-        <Link to="/security-department" className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">Security Departments</Link>
-        <Link to="/cleaners-department" className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">Cleaners Departments</Link>
+        <button onClick={()=>setDepartment("IT")} className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">IT Departments</button>
+        <button onClick={()=>setDepartment("Finance")} className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">Finance Departments</button>
+        <button onClick={()=>setDepartment("Security")} className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">Security Departments</button>
+        <button onClick={()=>setDepartment("Cleaners")} className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">Cleaners Departments</button>
       </ul>
       <div className="mt-4">
         {department==="All"?(<AllDepartments/>):null}
         {department==="Management"?(<Management/>):null}
+        {department==="IT"?(<IT/>):null}
+        {department==="Finance"?(<Finance/>):null}
+        {department==="Security"?(<Security/>):null}
+        {department==="Cleaners"?(<Cleaners/>):null}
       </div>
     </div>
   );
