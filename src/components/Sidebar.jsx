@@ -10,7 +10,9 @@ const Sidebar = () => {
       <div className="justify-center items-center h-[576px] w-full py-2">
         <div className="justify-between rounded bg-blue-950 py-4 flex flex-col w-full h-full items-center">
           <li className="list-none flex flex-col gap-2">
-            <NavLink to="/" className="cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start">
+            <NavLink to="/" className={`cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start ${
+                window.location.pathname === '/' ? 'bg-blue-800' : ''
+              }`}>
               <ion-icon size="large" name="grid-outline"></ion-icon>
               <p>Dashboard</p>
             </NavLink>
