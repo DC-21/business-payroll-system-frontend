@@ -39,24 +39,23 @@ const Calendar = () => {
   return (
     <div className="w-full grid grid-cols-2">
       <div className="w-full flex">
-        <div className="w-full bg-blue-200 flex flex-col items-center justify-center p-4">
-          <h2 className="text-center text-lg mb-4">
-            {currentDate.toLocaleDateString("en-US", {
-              year: "numeric",
-              month: "long",
-            })}
-          </h2>
-          <div className="w-full flex-grow grid grid-cols-7 gap-1 bg-slate-300">
-            {["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].map(
-              (day, index) => (
-                <div key={index} className="calendar-day header-day gap-4 px-4">
-                  {day}
-                </div>
-              )
-            )}
-            {renderCalendar()}
-          </div>
-        </div>
+      <div className="w-full bg-blue-200 flex flex-col items-center justify-center p-4">
+  <h2 className="text-center text-lg mb-4">
+    {currentDate.toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+    })}
+  </h2>
+  <div className="w-full flex-grow grid grid-cols-7 gap-1 bg-slate-300">
+    {["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].map((day, index) => (
+      <div key={index} className="calendar-day header-day gap-4 px-4 flex items-center justify-center">
+        {day}
+      </div>
+    ))}
+    {renderCalendar()}
+  </div>
+</div>
+
         <div className="w-full flex"></div>
       </div>
       <div className="w-full"></div>
