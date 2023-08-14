@@ -38,7 +38,7 @@ const Calendar = () => {
   };
 
   return (
-    <div className="calendar">
+    <div className="w-full flex bg-blue-200">
       <div className="calendar-header">
         <h2 className="calendar-title">
           {currentDate.toLocaleDateString('en-US', {
@@ -47,7 +47,7 @@ const Calendar = () => {
           })}
         </h2>
       </div>
-      <div className="calendar-grid">{renderCalendar()}</div>
+      <div className="grid grid-cols-7 gap-1">{renderCalendar()}</div>
     </div>
   );
 };
