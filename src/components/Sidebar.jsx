@@ -15,7 +15,7 @@ const Sidebar = () => {
               exact
               to="/"
               className={`cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start ${
-                location.pathname === '/' ? 'bg-blue-600' : ''
+                location.pathname === '/' ? 'bg-blue-800' : ''
               }`}
             >
               <ion-icon size="large" name="grid-outline"></ion-icon>
@@ -25,7 +25,7 @@ const Sidebar = () => {
             <Link
               to="/payroll"
               className={`cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start ${
-                location.pathname === "/payroll" ? "bg-blue-600" : ""
+                location.pathname === "/payroll" ? "bg-blue-800" : ""
               }`}
             >
               <ion-icon size="large" name="wallet-outline"></ion-icon>
@@ -34,7 +34,7 @@ const Sidebar = () => {
             <Link
               to="/recruit"
               className={`cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start ${
-                location.pathname === "/recruit" ? "bg-blue-600" : ""
+                location.pathname === "/recruit" ? "bg-blue-800" : ""
               }`}
             >
               <ion-icon size="large" name="person-add-outline"></ion-icon>
@@ -43,7 +43,7 @@ const Sidebar = () => {
             <Link
               to="/reports"
               className={`cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start ${
-                location.pathname === "/reports" ? "bg-blue-600" : ""
+                location.pathname === "/reports" ? "bg-blue-800" : ""
               }`}
             >
               <ion-icon size="large" name="receipt-outline"></ion-icon>
@@ -52,7 +52,7 @@ const Sidebar = () => {
             <Link
               to="/billing"
               className={`cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start ${
-                location.pathname === "/billing" ? "bg-blue-600" : ""
+                location.pathname === "/billing" ? "bg-blue-800" : ""
               }`}
             >
               <ion-icon size="large" name="card-outline"></ion-icon>
@@ -61,7 +61,7 @@ const Sidebar = () => {
             <Link
               to="/calendar"
               className={`cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start ${
-                location.pathname === "/calendar" ? "bg-blue-600" : ""
+                location.pathname === "/calendar" ? "bg-blue-800" : ""
               }`}
             >
               <ion-icon size="large" name="calendar-outline"></ion-icon>
@@ -70,7 +70,7 @@ const Sidebar = () => {
             <Link
               to="/departments"
               className={`cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start ${
-                location.pathname === "/departments" ? "bg-blue-600" : ""
+                location.pathname === "/departments" ? "bg-blue-800" : ""
               }`}
             >
               <ion-icon size="large" name="list-circle-outline"></ion-icon>
@@ -79,7 +79,7 @@ const Sidebar = () => {
             <Link
               to="/settings"
               className={`cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start ${
-                location.pathname === "/settings" ? "bg-blue-600" : ""
+                location.pathname === "/settings" ? "bg-blue-800" : ""
               }`}
             >
               <ion-icon size="large" name="settings-outline"></ion-icon>
