@@ -16,7 +16,7 @@ const Departments = () => {
           View all Departments Records.
         </p>
       </div>
-      <ul className="w-full flex gap-4 justify-start items-center list-none text-white">
+      <ul className="w-full flex gap-4 justify-start px-2 items-center list-none text-white">
         <button onClick={()=>setDepartment("All")} className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">All Departments</button>
         <button onClick={()=>setDepartment("Management")} className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">Management</button>
         <button onClick={()=>setDepartment("IT")} className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">IT Departments</button>
@@ -24,7 +24,7 @@ const Departments = () => {
         <button onClick={()=>setDepartment("Security")} className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">Security Departments</button>
         <button onClick={()=>setDepartment("Cleaners")} className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">Cleaners Departments</button>
       </ul>
-      <div className="mt-4">
+      <div className="mt-4 justify-start items-center w-full flex">
         {department==="All"?(<AllDepartments/>):null}
         {department==="Management"?(<Management/>):null}
         {department==="IT"?(<IT/>):null}
