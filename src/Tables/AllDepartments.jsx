@@ -21,9 +21,11 @@ const AllDepartments = () => {
     <div className="w-full flex justify-start px-2 items-center">
       <table>
         <thead>
-            <th className="border border-blue-900 bg-white px-4 py-2">Name</th>
-            <th className="border border-blue-900 bg-white px-4 py-2">H.o.D</th>
-            <th className="border border-blue-900 bg-white px-4 py-2">Number of Employees</th>
+            <tr>
+    <th className="border border-blue-900 bg-white px-4 py-2">Name</th>
+    <th className="border border-blue-900 bg-white px-4 py-2">H.o.D</th>
+    <th className="border border-blue-900 bg-white px-4 py-2">Number of Employees</th>
+  </tr>
         </thead>
         <tbody>
         {departments.map((department) => (

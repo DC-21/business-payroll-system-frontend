@@ -1,9 +1,55 @@
 
-
 const Calendar = () => {
-  return (
-    <div className='h-screen flex w-full bg-blue-200'>Calendar</div>
-  )
-}
+  const currentDate = new Date();
+  const currentDay = currentDate.getDate();
 
-export default Calendar
+  const daysInMonth = new Date(
+    currentDate.getFullYear(),
+    currentDate.getMonth() + 1,
+    0
+  ).getDate();
+
+  const firstDayIndex = new Date(
+    currentDate.getFullYear(),
+    currentDate.getMonth(),
+    1
+  ).getDay();
+
+  const renderCalendar = () => {
+    const calendar = [];
+    for (let i = 0; i < firstDayIndex; i++) {
+      calendar.push(<div key={i} className="calendar-day"></div>);
+    }
+
+    for (let i = 1; i <= daysInMonth; i++) {
+      const isCurrentDay = i === currentDay;
+      const dayClassName = isCurrentDay
+        ? 'calendar-day current-day'
+        : 'calendar-day';
+
+      calendar.push(
+        <div key={i} className={dayClassName}>
+          {i}
+        </div>
+      );
+    }
+
+    return calendar;
+  };
+
+  return (
+    <div className="calendar">
+      <div className="calendar-header">
+        <h2 className="calendar-title">
+          {currentDate.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+          })}
+        </h2>
+      </div>
+      <div className="calendar-grid">{renderCalendar()}</div>
+    </div>
+  );
+};
+
+export default Calendar;
