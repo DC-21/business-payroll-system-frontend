@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 const Sidebar = () => {
   const location = useLocation();
   return (
-    <div className="h-screen w-[170px] sticky left-0 bg-white items-center flex px-2 py-2 justify-between flex-col">
+    <div className="h-screen w-[170px] fixed left-0 bg-white items-center flex px-2 py-2 justify-between flex-col">
       <div className="justify-center rounded bg-blue-950 w-full flex">
         <img className="h-[95px] w-[100px]" src={logo} alt="logo" />
       </div>
