@@ -14,13 +14,27 @@ const Departments = () => {
         <p className="text-blue-950 text-2xl font-semibold">User Settings</p>
       </div>
       <ul className="w-full flex gap-4 justify-start px-2 items-center list-none text-white">
-        <button onClick={()=>setSettings("All")} className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">Profile</button>
-        <button onClick={()=>setSettings("Management")} className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">Password</button>
-        <button onClick={()=>setSettings("IT")} className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">Team</button>
-        <button onClick={()=>setSettings("Finance")} className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">Permissions</button>
-        <button onClick={()=>setSettings("Security")} className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">Security</button>
-        <button onClick={()=>setSettings("Security")} className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">Privacy</button>
-        <button onClick={()=>setSettings("Cleaners")} className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">Activity Log</button>
+        <button onClick={()=>setSettings("All")} className={`py-3 px-2 rounded hover:bg-blue-900 bg-blue-950 cursor-pointer ${
+            settings === "All" ? 'bg-blue-600' : ''
+          }`}>Profile</button>
+        <button onClick={()=>setSettings("Management")} className={`py-3 px-2 rounded hover:bg-blue-900 bg-blue-950 cursor-pointer ${
+            settings === "Management" ? 'bg-blue-600' : ''
+          }`}>Password</button>
+        <button onClick={()=>setSettings("IT")} className={`py-3 px-2 rounded hover:bg-blue-900 bg-blue-950 cursor-pointer ${
+            settings === "IT" ? 'bg-blue-600' : ''
+          }`}>Team</button>
+        <button onClick={()=>setSettings("Finance")} className={`py-3 px-2 rounded hover:bg-blue-900 bg-blue-950 cursor-pointer ${
+            settings === "Finance" ? 'bg-blue-600' : ''
+          }`}>Permissions</button>
+        <button onClick={()=>setSettings("Security")} className={`py-3 px-2 rounded hover:bg-blue-900 bg-blue-950 cursor-pointer ${
+            settings === "Security" ? 'bg-blue-600' : ''
+          }`}>Security</button>
+        <button onClick={()=>setSettings("Security")} className={`py-3 px-2 rounded hover:bg-blue-900 bg-blue-950 cursor-pointer ${
+            settings === "Security" ? 'bg-blue-600' : ''
+          }`}>Privacy</button>
+        <button onClick={()=>setSettings("Cleaners")} className={`py-3 px-2 rounded hover:bg-blue-900 bg-blue-950 cursor-pointer ${
+            settings === "Cleaners" ? 'bg-blue-600' : ''
+          }`}>Activity Log</button>
       </ul>
       <div className="mt-4">
         {settings==="All"?(<AllDepartments/>):null}
