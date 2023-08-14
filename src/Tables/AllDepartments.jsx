@@ -18,7 +18,7 @@ const AllDepartments = () => {
   },[]);
 
   return (
-    <div className="w-full flex justify-center items-center">
+    <div className="w-full flex justify-start px-2 items-center">
       <table>
         <thead>
             <th className="border border-blue-900 bg-white px-4 py-2">Name</th>

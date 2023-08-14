@@ -9,7 +9,7 @@ const Security = () => {
       .get("http://localhost:3000/security")
       .then((response) => {
         const data = response.data.security;
-        setSecurity(Object.values(data)); // Convert object values to array
+        setSecurity(Object.values(data));
         console.log("fetched securities:", data);
       })
       .catch((error) => {
@@ -18,7 +18,7 @@ const Security = () => {
   }, []);
 
   return (
-    <div className="flex w-full justify-center items-center">
+    <div className="flex w-full justify-start px-2 items-center">
       <table>
         <thead>
           <tr>

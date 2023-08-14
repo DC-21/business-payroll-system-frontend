@@ -14,7 +14,7 @@ const Cleaners = () => {
           });
     },[]);
   return (
-    <div className="flex w-full justify-center items-center">
+    <div className="flex w-full justify-start px-2 items-center">
         <table>
             <thead>
                 <th  className="border border-blue-900 bg-white px-4 py-2">Name</th>
