@@ -17,14 +17,29 @@ const Departments = () => {
         </p>
       </div>
       <ul className="w-full flex gap-4 justify-start px-2 items-center list-none text-white">
-        <button onClick={()=>setDepartment("All")} className={`py-3 px-2 rounded hover:bg-blue-900 cursor-pointer ${
+        <button onClick={()=>setDepartment("All")} className={`py-3 px-2 rounded hover:bg-blue-900 bg-blue-950 cursor-pointer ${
             department === "All" ? 'bg-blue-600' : ''
           }`}>All Departments</button>
-        <button onClick={()=>setDepartment("Management")} className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">Management</button>
-        <button onClick={()=>setDepartment("IT")} className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">IT Departments</button>
-        <button onClick={()=>setDepartment("Finance")} className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">Finance Departments</button>
-        <button onClick={()=>setDepartment("Security")} className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">Security Departments</button>
-        <button onClick={()=>setDepartment("Cleaners")} className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">Cleaners Departments</button>
+        <button onClick={() => setDepartment("Management")}
+          className={`py-3 px-2 rounded hover:bg-blue-900 bg-blue-950 cursor-pointer ${
+            department === "Management" ? 'bg-blue-600' : ''
+          }`}>Management</button>
+        <button onClick={() => setDepartment("IT")}
+          className={`py-3 px-2 rounded hover:bg-blue-900 bg-blue-950 cursor-pointer ${
+            department === "IT" ? 'bg-blue-600' : ''
+          }`}>IT Departments</button>
+        <button onClick={() => setDepartment("Finance")}
+          className={`py-3 px-2 rounded hover:bg-blue-900 bg-blue-950 cursor-pointer ${
+            department === "Finance" ? 'bg-blue-600' : ''
+          }`}>Finance Departments</button>
+        <button onClick={() => setDepartment("Security")}
+          className={`py-3 px-2 rounded hover:bg-blue-900 bg-blue-950 cursor-pointer ${
+            department === "Security" ? 'bg-blue-600' : ''
+          }`}>Security Departments</button>
+        <button onClick={() => setDepartment("Cleaners")}
+          className={`py-3 px-2 rounded hover:bg-blue-900 bg-blue-950 cursor-pointer ${
+            department === "Cleaners" ? 'bg-blue-600' : ''
+          }`}>Cleaners Departments</button>
       </ul>
       <div className="mt-4 justify-start items-center w-full flex">
         {department==="All"?(<AllDepartments/>):null}
