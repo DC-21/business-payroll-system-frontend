@@ -1,7 +1,8 @@
 import logo from "../images/logo.png";
-import { NavLink } from 'react-router-dom';
+import { Link, useLocation } from "react-router-dom";
 
 const Sidebar = () => {
+  const location = useLocation();
   return (
     <div className="h-screen w-[170px] sticky left-0 bg-white items-center flex px-2 py-2 justify-between flex-col">
       <div className="justify-center rounded bg-blue-950 w-full flex">
@@ -10,43 +11,83 @@ const Sidebar = () => {
       <div className="justify-center items-center h-[576px] w-full py-2">
         <div className="justify-between rounded bg-blue-950 py-4 flex flex-col w-full h-full items-center">
           <li className="list-none flex flex-col gap-2">
-            <NavLink to="/" className={`cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start ${
-                window.location.pathname === '/' ? 'bg-blue-800' : ''
-              }`}>
+            <Link
+              exact
+              to="/"
+              className={`cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start ${
+                location.pathname === '/' ? 'bg-blue-600' : ''
+              }`}
+            >
               <ion-icon size="large" name="grid-outline"></ion-icon>
               <p>Dashboard</p>
-            </NavLink>
-            <NavLink to="/payroll" className="cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start">
+            </Link>
+
+            <Link
+              to="/payroll"
+              className={`cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start ${
+                location.pathname === "/payroll" ? "bg-blue-600" : ""
+              }`}
+            >
               <ion-icon size="large" name="wallet-outline"></ion-icon>
               <p>Payroll</p>
-            </NavLink>
-            <NavLink to="/recruit" className="cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start">
+            </Link>
+            <Link
+              to="/recruit"
+              className={`cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start ${
+                location.pathname === "/recruit" ? "bg-blue-600" : ""
+              }`}
+            >
               <ion-icon size="large" name="person-add-outline"></ion-icon>
               <p>Recruit</p>
-            </NavLink>
-            <NavLink to="/reports" className="cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start">
+            </Link>
+            <Link
+              to="/reports"
+              className={`cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start ${
+                location.pathname === "/reports" ? "bg-blue-600" : ""
+              }`}
+            >
               <ion-icon size="large" name="receipt-outline"></ion-icon>
               <p>Reports</p>
-            </NavLink>
-            <NavLink to="/billing" className="cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start">
+            </Link>
+            <Link
+              to="/billing"
+              className={`cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start ${
+                location.pathname === "/billing" ? "bg-blue-600" : ""
+              }`}
+            >
               <ion-icon size="large" name="card-outline"></ion-icon>
               <p>Billing</p>
-            </NavLink>
-            <NavLink to="/calendar" className="cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start">
+            </Link>
+            <Link
+              to="/calendar"
+              className={`cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start ${
+                location.pathname === "/calendar" ? "bg-blue-600" : ""
+              }`}
+            >
               <ion-icon size="large" name="calendar-outline"></ion-icon>
               <p>Calendar</p>
-            </NavLink>
-            <NavLink to="/departments" className="cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start">
+            </Link>
+            <Link
+              to="/departments"
+              className={`cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start ${
+                location.pathname === "/departments" ? "bg-blue-600" : ""
+              }`}
+            >
               <ion-icon size="large" name="list-circle-outline"></ion-icon>
               <p>Departments</p>
-            </NavLink>
-            <NavLink to="/settings" className="cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start">
+            </Link>
+            <Link
+              to="/settings"
+              className={`cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start ${
+                location.pathname === "/settings" ? "bg-blue-600" : ""
+              }`}
+            >
               <ion-icon size="large" name="settings-outline"></ion-icon>
               <p>Settings</p>
-            </NavLink>
+            </Link>
           </li>
           <li className="list-none">
-          <a className="cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start mr-9">
+            <a className="cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start mr-9">
               <ion-icon size="large" name="log-out-outline"></ion-icon>
               <p>Logout</p>
             </a>
