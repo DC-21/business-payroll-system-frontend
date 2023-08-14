@@ -1,5 +1,5 @@
 import logo from "../images/logo.png";
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
@@ -10,38 +10,38 @@ const Sidebar = () => {
       <div className="justify-center items-center h-[576px] w-full py-2">
         <div className="justify-between rounded bg-blue-950 py-4 flex flex-col w-full h-full items-center">
           <li className="list-none flex flex-col gap-2">
-            <Link to="/" className="cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start">
+            <NavLink to="/" className="cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start">
               <ion-icon size="large" name="grid-outline"></ion-icon>
               <p>Dashboard</p>
-            </Link>
-            <Link to="/payroll" className="cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start">
+            </NavLink>
+            <NavLink to="/payroll" className="cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start">
               <ion-icon size="large" name="wallet-outline"></ion-icon>
               <p>Payroll</p>
-            </Link>
-            <Link to="/recruit" className="cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start">
+            </NavLink>
+            <NavLink to="/recruit" className="cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start">
               <ion-icon size="large" name="person-add-outline"></ion-icon>
               <p>Recruit</p>
-            </Link>
-            <Link to="/reports" className="cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start">
+            </NavLink>
+            <NavLink to="/reports" className="cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start">
               <ion-icon size="large" name="receipt-outline"></ion-icon>
               <p>Reports</p>
-            </Link>
-            <Link to="/billing" className="cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start">
+            </NavLink>
+            <NavLink to="/billing" className="cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start">
               <ion-icon size="large" name="card-outline"></ion-icon>
               <p>Billing</p>
-            </Link>
-            <Link to="/calendar" className="cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start">
+            </NavLink>
+            <NavLink to="/calendar" className="cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start">
               <ion-icon size="large" name="calendar-outline"></ion-icon>
               <p>Calendar</p>
-            </Link>
-            <Link to="/departments" className="cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start">
+            </NavLink>
+            <NavLink to="/departments" className="cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start">
               <ion-icon size="large" name="list-circle-outline"></ion-icon>
               <p>Departments</p>
-            </Link>
-            <Link to="/settings" className="cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start">
+            </NavLink>
+            <NavLink to="/settings" className="cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start">
               <ion-icon size="large" name="settings-outline"></ion-icon>
               <p>Settings</p>
-            </Link>
+            </NavLink>
           </li>
           <li className="list-none">
           <a className="cursor-pointer rounded hover:bg-blue-300 hover:text-blue-950 text-white flex w-full items-center gap-2 justify-start mr-9">
