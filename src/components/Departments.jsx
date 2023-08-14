@@ -7,7 +7,7 @@ import Security from '../Tables/Security';
 import Cleaners from '../Tables/Cleaners';
 
 const Departments = () => {
-  const[department,setDepartment]=useState('')
+  const[department,setDepartment]=useState('All')
   return (
     <div className="w-full flex flex-col bg-blue-200">
       <div className="flex flex-col items-center py-8">
@@ -17,7 +17,9 @@ const Departments = () => {
         </p>
       </div>
       <ul className="w-full flex gap-4 justify-start px-2 items-center list-none text-white">
-        <button onClick={()=>setDepartment("All")} className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">All Departments</button>
+        <button onClick={()=>setDepartment("All")} className={`py-3 px-2 rounded hover:bg-blue-900 cursor-pointer ${
+            department === "All" ? 'bg-blue-600' : ''
+          }`}>All Departments</button>
         <button onClick={()=>setDepartment("Management")} className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">Management</button>
         <button onClick={()=>setDepartment("IT")} className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">IT Departments</button>
         <button onClick={()=>setDepartment("Finance")} className="py-3 px-2 rounded bg-blue-950 hover:bg-blue-900 cursor-pointer">Finance Departments</button>
