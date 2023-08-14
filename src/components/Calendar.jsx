@@ -58,10 +58,13 @@ const Calendar = () => {
               )
             )}
             {renderCalendar().map((day, index) => (
-      <div key={index} className="calendar-day gap-4 px-4 flex items-center justify-center">
-        {day}
-      </div>
-    ))}
+              <div
+                key={index}
+                className="calendar-day gap-4 px-4 flex items-center justify-center bg-white"
+              >
+                {day}
+              </div>
+            ))}
           </div>
         </div>
 
