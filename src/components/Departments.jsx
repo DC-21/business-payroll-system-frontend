@@ -17,7 +17,7 @@ const Departments = () => {
             View all Departments Records.
           </p>
         </div>
-        <ul className="w-full flex gap-4 justify-start px-2 py-4 items-center list-none text-white bg-blue-200">
+        <ul className="w-full flex gap-4 justify-start px-2 py-4 items-center list-none text-white">
           <button
             onClick={() => setDepartment("All")}
             className={`py-3 px-2 rounded hover:bg-blue-900 bg-blue-950 cursor-pointer ${
