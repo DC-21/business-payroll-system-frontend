@@ -9,14 +9,14 @@ import Cleaners from '../Tables/Cleaners';
 const Departments = () => {
   const[department,setDepartment]=useState('All')
   return (
-    <div className="w-full flex flex-col bg-blue-200">
-      <div className="flex flex-col items-center py-8">
+    <div className="w-full flex flex-col">
+      <div className="flex flex-col items-center py-8 bg-blue-200">
         <p className="text-blue-950 text-2xl font-semibold">Departments</p>
         <p className="text-blue-900 text-xl mt-4">
           View all Departments Records.
         </p>
       </div>
-      <ul className="w-full flex gap-4 justify-start px-2 items-center list-none text-white">
+      <ul className="w-full flex gap-4 justify-start px-2 py-4 items-center list-none text-white bg-blue-200">
         <button onClick={()=>setDepartment("All")} className={`py-3 px-2 rounded hover:bg-blue-900 bg-blue-950 cursor-pointer ${
             department === "All" ? 'bg-blue-600' : ''
           }`}>All Departments</button>
@@ -41,7 +41,7 @@ const Departments = () => {
             department === "Cleaners" ? 'bg-blue-600' : ''
           }`}>Cleaners Departments</button>
       </ul>
-      <div className="mt-4 justify-start items-center w-full flex">
+      <div className="mt-4 justify-start items-center w-full flex bg-white">
         {department==="All"?(<AllDepartments/>):null}
         {department==="Management"?(<Management/>):null}
         {department==="IT"?(<IT/>):null}
